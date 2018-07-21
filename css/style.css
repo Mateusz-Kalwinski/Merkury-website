@@ -1,0 +1,180 @@
+/*================
+      GENERAL
+================*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*================
+      COLORS
+================*/
+
+.white-color{
+    color: #ffffff;
+}
+
+.graphite-color{
+    color: #8492af;
+}
+
+.dark-graphite-color{
+    color: #0e1a35;
+}
+
+/*================
+    TYPOGRAPHY
+================*/
+
+.big-text{
+    font-size: 60px;
+}
+
+.mid-text{
+    font-size: 20px;
+}
+
+.low-text{
+    font-size: 15px;
+}
+
+.light-text{
+    font-weight: 300;
+}
+
+/*================
+    HEADER
+=================*/
+
+ul, nav{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+.logo{
+    width: 60%;
+}
+
+a.login-btn{
+    text-align: center;
+    color: #5584ff;
+    padding: 8px 30px;
+    border-radius: 40px;
+    border: 1px solid #233a72;
+    transition: all 0.3s ease;
+}
+
+a.login-btn:hover{
+    border: none;
+    background-color: rgba(255,255,255, 1);
+    border: 1px solid #ffffff;
+
+}
+
+/*================
+     SECTIONS
+================*/
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 128px 72px;
+}
+
+@media (max-width: 1000px) {
+    section{
+        padding: 106px 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    section{
+        padding: 84px 35px;
+    }
+}
+
+/*================
+      HEADER
+================*/
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 100px 0;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav li{
+    margin: 0 15px;
+}
+
+/*================
+       HOME
+================*/
+
+.home{
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    color: white !important;
+}
+
+.bg-image{
+    background-image: url("../img/main-bg.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    z-index: -11;
+    background-position: center center;
+}
+
+.firs-space{
+    margin-bottom: 25px;
+}
+
+.second-space{
+    margin-bottom: 30px;
+}
+
+.third-space{
+    margin-bottom: 30px;
+}
+
+a.get-started-btn{
+    padding: 13px 40px;
+    border-radius: 40px;
+    background-color: #5584ff;
+    text-align: center;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+a.get-started-btn:hover{
+    opacity: 1;
+}
+
